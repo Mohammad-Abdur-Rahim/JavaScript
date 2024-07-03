@@ -4,9 +4,6 @@ let b =50;
 
 console.log("a =",a,"b =",b)
 
-console.log("a+b =",a+b)
-console.log("a-b =",a-b)
-console.log("a%b =",a%b) 
-
-
-//Arithmetic operator use
+//Unary operator use
+console.log("a-- = ",a--);   //post increment
+console.log("--b = ",--b);  //pre increment
