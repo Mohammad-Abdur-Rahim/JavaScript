@@ -4,7 +4,8 @@ const student ={
      age : 22,
      cgpa : 3.16,
 };
-console.log(student);
-console.log(typeof(student));
+
+student["name"]="Developer Rahim"
+console.log(student["name"]);
 
 // Object means collection of different data 
