@@ -1,7 +1,10 @@
-// JavaScript  ----------- Variable and dataType ------------------------
-let name ="abdurRahime";
-let age =22;
-const universityName ="Daffodil International University";
-console.log(name);
-console.log(age);
-console.log(universityName);
+// JavaScript  ----------- Object  ------------------------
+const student ={
+     name : "Md Abdur rahim",
+     age : 22,
+     cgpa : 3.16,
+};
+console.log(student);
+console.log(typeof(student));
+
+// Object means collection of different data 
