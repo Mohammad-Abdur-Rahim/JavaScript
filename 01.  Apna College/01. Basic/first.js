@@ -2,9 +2,20 @@
 
 //Practice problem solve
 
-let number =prompt("Enter a number:");
-if(number%5===0){
-    console.log(number,"is a Multiple of 5")
-}else{
-    console.log(number,"not multiple of 5")
-}44
+const score = 95;
+
+if(score>=80){
+    console.log("A")
+}
+else if(score>=70 && score<=79){
+    console.log("B")
+}
+else if(score>=60 && score<=69){
+    console.log("C")
+}
+else if(score>=50 && score<=59){
+    console.log("D")
+}
+else{
+    console.log("F")
+}
