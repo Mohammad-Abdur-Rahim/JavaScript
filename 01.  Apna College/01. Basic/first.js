@@ -1,10 +1,12 @@
 // JavaScript  -----------  Operator & Condition use ...  ------------------------
 
-//comparison operator use
-let a=10;
-let b="10";
+//logical operator use
+let a=50;
+let b=90;
 
 
-console.log("a==b",a==b);   //only value comparison
-console.log("a===b",a===b);  //value and data-type comparison
+console.log(a<b && b<a);   
+console.log(a<b || b<a);   
+console.log(a<b && !b<a);   
+
 
