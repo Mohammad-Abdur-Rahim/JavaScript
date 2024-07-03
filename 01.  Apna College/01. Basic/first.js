@@ -1,8 +1,11 @@
 // JavaScript  -----------  Operator & Condition use ...  ------------------------
 
-//Assignment operator use
-let a=5;
+//comparison operator use
+let a=10;
 let b=10;
-a+=5;
-b-=4;
-console.log("a,b",a,b);
+
+
+console.log("a==b",a==b);
+console.log("a===b",a===b);
+console.log("a!=b",a!=b);
+console.log("a!==b",a!==b);
