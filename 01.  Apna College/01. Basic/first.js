@@ -1,2 +1,12 @@
 // JavaScript  -----------  Operator & Condition use ...  ------------------------
-console.log("Start operator and condition");
+let a =500;
+let b =50;
+
+console.log("a =",a,"b =",b)
+
+console.log("a+b =",a+b)
+console.log("a-b =",a-b)
+console.log("a%b =",a%b) 
+
+
+//Arithmetic operator use
