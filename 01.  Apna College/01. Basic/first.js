@@ -6,3 +6,4 @@ const product = {
     price: 270,
 };
 console.log(product);
+console.log(typeof product.rating);
