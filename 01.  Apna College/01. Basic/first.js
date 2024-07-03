@@ -1,11 +1,8 @@
-// JavaScript  ----------- Object  ------------------------
-const student ={
-     name : "Md Abdur rahim",
-     age : 22,
-     cgpa : 3.16,
+// JavaScript  ----------- practice product card details = object create  ------------------------
+const product = {
+    name: "Parker Jotter Standard CT Ball Pen (Black)",
+    rating: 4,
+    isDeal: true,
+    price: 270,
 };
-
-student["name"]="Developer Rahim"
-console.log(student["name"]);
-
-// Object means collection of different data 
+console.log(product);
