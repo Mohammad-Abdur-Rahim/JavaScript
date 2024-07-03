@@ -1,12 +1,16 @@
 // JavaScript  -----------  Operator & Condition use ...  ------------------------
 
 //Conditional Statement
-let age=22;
-if(age>18){
-    console.log("you can vote")
+let mode ="dark";
+let color;
+
+if(mode === "dark"){
+    color = "dark";
+}else if(mode === "light"){
+    color = "light";
 }
 else{
-    console.log("Warning can not vote") 
+    console.log("Invalid mode");
 }
-
+console.log(color);
 
