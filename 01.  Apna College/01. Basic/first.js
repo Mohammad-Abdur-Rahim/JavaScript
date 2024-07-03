@@ -1,7 +1,10 @@
 // JavaScript  -----------  Operator & Condition use ...  ------------------------
 
-//Ternary operator 
+//Practice problem solve
 
-let age=22;
-
-console.log(age>18 ? "Adult" : "Child");             //Important to Js ........
+let number =prompt("Enter a number:");
+if(number%5===0){
+    console.log(number,"is a Multiple of 5")
+}else{
+    console.log(number,"not multiple of 5")
+}44
