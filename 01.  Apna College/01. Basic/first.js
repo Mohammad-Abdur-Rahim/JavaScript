@@ -1,8 +1,6 @@
 // JavaScript  -----------  Loops & String use ...  ------------------------
-//While Loop
-let i=0;
-do{
-    console.log("apna college");
-    i++;
-}while (i <=5);
-
+//For of loops use only (String,Array)****
+let str="JavaScript";
+for(let i of str){
+    console.log("i =",i);
+}
