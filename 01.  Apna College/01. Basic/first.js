@@ -1,7 +1,9 @@
 // JavaScript  -----------  Loops & String use ...  ------------------------
 //While Loop
 let i=0;
+let sum=0
 while(i<=5){
-    console.log("i = " , i);
+    sum+=i;
     i++;
 }
+console.log("sum = " , sum);
