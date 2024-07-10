@@ -1,4 +1,8 @@
 // JavaScript  -----------  Loops & String use ...  ------------------------
-for(let i=1;i<=5;i++){
-    console.log("{1}loop");
+//solve 1
+let sum=0;
+for(let i=0;i<=15;i++){
+    sum=sum+i;
 }
+console.log(sum);
+console.log("end of sum 1 to 15")
