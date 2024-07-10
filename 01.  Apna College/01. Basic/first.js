@@ -1,9 +1,12 @@
 // JavaScript  -----------  Loops & String use ...  ------------------------
-//For of loops use only (String,Array)****
-let str="JavaScript";
-let length=0;
-for(let i of str){
-    console.log("i =",i);
-    length++;
+//For in loops use only (String,Array)****
+const student = {
+    name: "md",
+    id: 221,
+    age: 22,
+    cgpa: 3.19,
+    isPass: true,
+};
+for (let i in student){
+    console.log("key:",i,student[i]);
 }
-console.log("length = ",length);
