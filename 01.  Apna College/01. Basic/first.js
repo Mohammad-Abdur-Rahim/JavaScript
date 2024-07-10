@@ -1,8 +1,8 @@
-//solve question print all even number 0 to 100;
+//create a game start with any random numbers.ask the user keep guessing the correct numbers until the game is finished   . 
+let gameNum = 25;
+let userNum = prompt("guessing the game number");
 
-for(let i=0;i<=100;i++) {
-    // if(i%2!==0) odd formula
-    if(i%2===0){
-        console.log("Even numbers",i);
-    }
+while (userNum != gameNum) {
+     userNum = prompt(" Again try");
 }
+console.log("Congratulation You win ");
