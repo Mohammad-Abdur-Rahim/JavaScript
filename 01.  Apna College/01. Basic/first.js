@@ -1,7 +1,7 @@
 // Template String representation now
 
-let specialString = `This is a special template Backtik
-                        Hello
-                        World
-                        Thanks backtike String`;
-console.log(specialString);
+let output={
+    item:"iphone xs",
+    price:20000,
+};
+console.log(`item :${output.item} and price is ${output.price} taka`);
