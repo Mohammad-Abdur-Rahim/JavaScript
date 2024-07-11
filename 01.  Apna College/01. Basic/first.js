@@ -1,7 +1,7 @@
-// String representation now
+// Template String representation now
 
-let str="Md Abdur Rahim";
-let str2='Md';
-console.log(str.length);
-console.log(str[9]);
-
+let specialString = `This is a special template Backtik
+                        Hello
+                        World
+                        Thanks backtike String`;
+console.log(specialString);
