@@ -1,13 +1,9 @@
-//  String Question solve ------Generate username based user input------
+//  JavaScript ----Array ----
 
-// let userName =prompt("Enter Your Full Name");
-
-// let userNameLength =userName.length;
-
-
-// console.log(`@${userName.concat(userNameLength)}`); 
-//My solve now apna college solve start
-
-let fullName = prompt("Enter Your Full Name");
-let userName = "@"+fullName+fullName.length;
-console.log(userName);
+let heros = ["dark","hulk","king"];
+let mark =[97,88,65,10,22];
+let info = ["Mohammad",72,"Dhaka"];
+console.log(mark);
+console.log(mark.length);
+console.log(info.length);
+console.log(typeof heros);
