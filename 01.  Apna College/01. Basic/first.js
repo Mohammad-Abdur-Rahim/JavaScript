@@ -7,6 +7,6 @@ let sum=0;
 for (mark of marks){
 sum += mark;
 }
-console.log("Sum of Array :",sum);
+console.log(`Sum of Array : ${sum}`);
 let average = sum/len;
-console.log("Average of Array :",average);
+console.log(`Average of Array : ${average}`);
