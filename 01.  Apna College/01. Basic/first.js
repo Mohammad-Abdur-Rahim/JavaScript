@@ -1,9 +1,12 @@
 //  JavaScript ---- Array Methods  --------
 
-let num1 = [1, 2, 3, 4, 5];
-let num2 = [10, 20, 30, 40, 50];
 
-let addToArray = num1.concat(num2);
-console.log(addToArray);
+let num = [10, 20, 30, 40, 50];
+num.unshift(440);  //unshift add number first place
+console.log(num);
+num.shift();   //shift delete number first place
+console.log(num);
+
+
 
 
