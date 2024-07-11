@@ -1,7 +1,9 @@
 //  JavaScript ---- Array Methods  --------
 
-let foodItems = ["apple", "banana","orange","tomato"];
-console.log(foodItems);
-console.log(foodItems.toString()); // convert array to string & Original not change array
+let num1 = [1, 2, 3, 4, 5];
+let num2 = [10, 20, 30, 40, 50];
+
+let addToArray = num1.concat(num2);
+console.log(addToArray);
 
 
