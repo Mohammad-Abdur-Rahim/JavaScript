@@ -1,9 +1,9 @@
 //  JavaScript ----Array ----
 
-let heros = ["dark","hulk","king"];
-let mark =[97,88,65,10,22];
-let info = ["Mohammad",72,"Dhaka"];
+
+let mark =[97,88,65,10,22,11,222,333,44,55];
+mark[3]=99; // array value changeable
 console.log(mark);
-console.log(mark.length);
-console.log(info.length);
-console.log(typeof heros);
+console.log(mark[3]);
+
+
