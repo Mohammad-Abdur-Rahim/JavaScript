@@ -1,7 +1,7 @@
 //  JavaScript ----Array ----
 
-let info = ["Rahim","Rakib","Rafin","Shafin","Alom"];
+let names = ["Rahim","Rakib","Rafin","Shafin","Alom"];
 
-for (let i=0;i<info.length;i++){
-    console.log(info[i]);
+for (let name of names) {
+    console.log(name.toUpperCase());
 }
