@@ -1,9 +1,7 @@
 //  JavaScript ----Array ----
 
+let info = ["Rahim","Rakib","Rafin","Shafin","Alom"];
 
-let mark =[97,88,65,10,22,11,222,333,44,55];
-mark[3]=99; // array value changeable
-console.log(mark);
-console.log(mark[3]);
-console.log(mark); //main array change that means **mutable  but string -----immutable-----
-
+for (let i=0;i<info.length;i++){
+    console.log(info[i]);
+}
