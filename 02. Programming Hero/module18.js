@@ -1,11 +1,15 @@
-// Ternary Operator if else 
-const age =18;
-// if(age>=18){
-//     console.log("Adult");
-// }
-// else{
-//     console.log.og("Boy");
-// }
-// Simple ternary operator 
+// Calculate BMI 
+const BMI =55 ;
 
-age>=18 ? console.log("Adult") :  console.log.og("Boy");
+if(BMI <18){
+    console.log("UnderWeight");
+}
+else if (BMI >=18.5 && BMI <= 24.9){
+    console.log("Normal");
+}
+else if (BMI >= 25 && BMI <= 29.9){
+    console.log("OverWeight");
+}
+else{
+    console.log("Obese")
+}
