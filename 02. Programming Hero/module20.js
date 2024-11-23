@@ -7,5 +7,7 @@ const person ={
     salary : 35000,
     married : false
 };
-console.log(person);
-console.log(person.name);
+// console.log(person);
+// console.log(person.name);
+person['salary'] =45000;
+console.log(person['salary']);
