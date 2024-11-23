@@ -1,10 +1,14 @@
-// Array part 1 
-const numbers = [1, 2, 3, 4, 5];
-console.log(numbers[0]);
+// Array push pop 
+const numbers = [11, 22, 33, 44, 55];
+console.log(numbers);
 
-const fourth = numbers[4];
-console.log(fourth);
+numbers.push(66,77,88,99,101);
+console.log(numbers);
+numbers.unshift(99);
+console.log(numbers);
 
-// set or update 
-numbers[4] = 999;
+numbers.pop();
+console.log(numbers);
+
+numbers.shift();
 console.log(numbers);
