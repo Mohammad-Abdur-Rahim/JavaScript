@@ -1,4 +1,4 @@
-// Array Includs , indexof , Array.isArray, join , concat , slice
+// Array Includes , indexof , Array.isArray, join , concat , slice
 const numbers = [11, 22, 33, 44, 55];
 console.log(numbers.join('+ '));
 console.log(numbers.includes(55));
