@@ -1,20 +1,17 @@
-// String And Object Fundamental 
+// String Reverse ----
 
-// Slice 
-const country ="Bangladesh";
-const part = country.slice(0,3);
-console.log(part);
+const letters ="Bangladesh";
+  //1 way 
+// let reverse ='';
+// for(const letter of letters) {
+//     reverse = letter+reverse;
+// }
+// console.log(reverse);
 
-// split
-const sentence ="i Am a good web developer";
-console.log(sentence.split(''));
-
-//Join 
-const friend =['rahim','karim','sopon','sakib'];
-console.log(friend.join('+'));
-
-//Concat
-const firstName ='Md Abdur';
-const lastName ='Rahim';
-const fullName = firstName.concat(' ').concat(lastName);
-console.log(fullName);
+// 2d way 
+let reverse ='';
+for(let i=0; i<letters.length; i++) {
+    const letter = letters[i];
+    reverse = letter+reverse;
+}
+console.log(reverse);
