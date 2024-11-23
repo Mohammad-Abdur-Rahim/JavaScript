@@ -1,18 +1,17 @@
 // Fundamental conditional operation if else 
-const price =15000;
-if(price >=5000){
-    //10 % discount
-    const discount = price *10/100;
-    const payAmount =price - discount ;
-    console.log(payAmount);
+// Nested loop condition
+const money =1000;
+if(money > 2000){
+    console.log("Rich this time")
 }
-else if(price >= 8000){
-    // 5 % discount
-    discount = price * 5/100;
-    payAmount = price - discount;
-    console.log(payAmount);
+else{
+    if(money >500)
+    {
+        console.log("Tea  Food");
 
-}
-else {
-    console.log(price);
+    }
+    else {
+        console.log("poor");
+    }
+  
 }
