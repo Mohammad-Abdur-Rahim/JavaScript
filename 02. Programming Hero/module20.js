@@ -1,17 +1,11 @@
-// String Reverse ----
+// Object study ------------------------------
 
-const letters ="Bangladesh";
-  //1 way 
-// let reverse ='';
-// for(const letter of letters) {
-//     reverse = letter+reverse;
-// }
-// console.log(reverse);
-
-// 2d way 
-let reverse ='';
-for(let i=0; i<letters.length; i++) {
-    const letter = letters[i];
-    reverse = letter+reverse;
-}
-console.log(reverse);
+const person ={
+    name : "Md Abdur Rahim",
+    age : 23,
+    profession : 'Web Developer',
+    salary : 35000,
+    married : false
+};
+console.log(person);
+console.log(person.name);
