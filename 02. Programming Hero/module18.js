@@ -1,17 +1,11 @@
-// Fundamental conditional operation if else 
-// Nested loop condition
-const money =1000;
-if(money > 2000){
-    console.log("Rich this time")
-}
-else{
-    if(money >500)
-    {
-        console.log("Tea  Food");
+// Ternary Operator if else 
+const age =18;
+// if(age>=18){
+//     console.log("Adult");
+// }
+// else{
+//     console.log.og("Boy");
+// }
+// Simple ternary operator 
 
-    }
-    else {
-        console.log("poor");
-    }
-  
-}
+age>=18 ? console.log("Adult") :  console.log.og("Boy");
