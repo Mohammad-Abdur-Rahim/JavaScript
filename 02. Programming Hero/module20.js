@@ -7,7 +7,9 @@ const person ={
     salary : 35000,
     married : false
 };
-// console.log(person);
-// console.log(person.name);
-person['salary'] =45000;
-console.log(person['salary']);
+// key value access 
+
+const keys = Object.keys(person);
+const value = Object.values(person);
+console.log(keys);
+console.log(value);
