@@ -5,11 +5,9 @@ const person ={
     age : 23,
     profession : 'Web Developer',
     salary : 35000,
+    unique :{
+        color : 'red',
+    },
     married : false
 };
-// key value access 
-
-const keys = Object.keys(person);
-const value = Object.values(person);
-console.log(keys);
-console.log(value);
+console.log(person.unique.color);
