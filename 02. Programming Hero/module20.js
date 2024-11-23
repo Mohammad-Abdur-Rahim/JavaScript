@@ -1,17 +1,20 @@
 // String And Object Fundamental 
-const country ="Bangladesh is Our Country";
 
-console.log(country.toUpperCase());
-console.log(country.toLowerCase());
+// Slice 
+const country ="Bangladesh";
+const part = country.slice(0,3);
+console.log(part);
 
+// split
+const sentence ="i Am a good web developer";
+console.log(sentence.split(''));
 
-const subject = "Math";
-const book = "math    ";
+//Join 
+const friend =['rahim','karim','sopon','sakib'];
+console.log(friend.join('+'));
 
-if(subject.toLowerCase().trim()===book.toLowerCase().trim()){
-    console.log("Same");
-}
-else {
-    console.log("Not Same");
-
-}
+//Concat
+const firstName ='Md Abdur';
+const lastName ='Rahim';
+const fullName = firstName.concat(' ').concat(lastName);
+console.log(fullName);
