@@ -1,13 +1,15 @@
 // Object study ------------------------------
 
-const person ={
+const persons ={
     name : "Md Abdur Rahim",
     age : 23,
     profession : 'Web Developer',
     salary : 35000,
-    unique :{
-        color : 'red',
-    },
     married : false
 };
-console.log(person.unique.color);
+// loop access the object 
+for (const person in persons){
+    console.log(person);
+    console.log(persons[person]);
+}
+
