@@ -1,0 +1,1 @@
+// JavaScript simple coding problem 
