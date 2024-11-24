@@ -1,17 +1,19 @@
+// Calculate the average number of array odd number length
 
-
-function isLeapYear(year) {
-   
-    if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
-      return 'Leap Year';
-    } else {
-      return 'Not Leap Year';
+function arrayOddAverage(numberOfArray) {
+    const oddNumber = [];
+    for (const number of numberOfArray) {
+        if (number % 2 === 1) {
+            oddNumber.push(number);
+        }
     }
-  }
-  
-  // Test cases
-  console.log(isLeapYear(2000)); 
-  console.log(isLeapYear(1900)); 
-  console.log(isLeapYear(2004));
-  console.log(isLeapYear(2001)); 
-  
+    // console.log(oddNumber);
+    let sum =0;
+    for(const number of oddNumber) {
+        sum += number;
+    }
+    return sum/oddNumber.length;  
+}
+const numbers = [22, 33, 45, 356, 566, 33, 55, 51];
+const output = arrayOddAverage(numbers);
+console.log("Average Odd numbers is :", output);
