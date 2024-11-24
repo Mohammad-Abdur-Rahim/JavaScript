@@ -1,10 +1,19 @@
 // Function javaScript implements 
-function add(n1,n2,n3){
-    const sum = n1+n2+n3;
-    console.log(sum);
+function isEven (number){
+    if(number % 2 === 0){
+        return true;
+    }
+    else{
+        return false;
+    }
 }
+console.log(isEven(5));
 
-const n1 = 12;
-const n2 = 20;
-const n3 = 30;
-add(n1,n2,n3);
+function isOdd (number){
+    if(number % 2 === 1){
+        return true;
+    }
+    return false;
+}
+console.log(isOdd(10));
+console.log(isOdd(7));
