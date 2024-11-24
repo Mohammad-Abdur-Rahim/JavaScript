@@ -1,14 +1,9 @@
-const min = Math.min(10,20,30);
-console.log(min);
-const max = Math.max(10,20,30);
-console.log(max);
+//SWap two variable 
+let num1 = 10;
+let num2 = 900;
 
-console.log(Math.PI);
-console.log(Math.abs(-99));
-console.log(Math.round(2.5));
-console.log(Math.floor(2.25));
-console.log(Math.ceil(2.25));
+let temp = num1; 
+num1 = num2;   
+num2 = temp;   
 
-//Math Random
-console.log(Math.random());
-
+console.log(num1, num2); 
