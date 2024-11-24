@@ -1,16 +1,10 @@
 // Function javaScript implements 
-
-// Add function 
-function sum (num1,num2){
-    const sum = num1 + num2;
-console.log(sum)
+function add(n1,n2,n3){
+    const sum = n1+n2+n3;
+    console.log(sum);
 }
-sum(2,8);
 
-// square function 
-
-function person(number){
-    const square = number*number;
-    console.log(square);
-}
-person(12);
+const n1 = 12;
+const n2 = 20;
+const n3 = 30;
+add(n1,n2,n3);
