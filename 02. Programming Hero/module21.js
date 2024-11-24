@@ -1,23 +1,26 @@
-function sumArrays(arrays){
 
-    let sum =0;
-for(const array of arrays){
-console.log(array);
- sum = sum + array;
+function evenNumberOnly(numbers){
+const evenNumber =[];
+    for(const number of numbers){
+        if(number % 2 === 0){
+            evenNumber.push(number)
+        }
 }
-return sum;
+return evenNumber;  
 
-}
-
-const num = [10,20,30,40,50];
-const sumArray = sumArrays(num);
-console.log("sum of numbers :",sumArray);
-
-
-// const numArray = [10,20,30,40,50];
-// let sum=0;
-// for(const array of numArray){
-//     console.log("sum of numbers :",array);
-//     sum+=array ;
+// const oddNumber =[];
+//     for(const number of numbers){
+//         if(number % 2 === 0){
+//             oddNumber.push(number)
+//         }
 // }
-// console.log(sum);
+// return oddNumber;  
+
+}
+
+
+const num = [10,21,30,41,50,9,7];
+const output = evenNumberOnly(num);
+console.log("output of numbers :",output);
+
+
