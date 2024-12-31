@@ -1,5 +1,8 @@
-const liLists =document.getElementsByTagName('li');
-// console.log(liLists);
-for(const li of liLists) {
-    console.log(li.innerHTML);
+const skill =document.getElementById('skill');
+console.log(skill);
+const ielts =document.getElementsByClassName('ielts');
+for(const ielt of ielts){
+    console.log(ielt.innerHTML);
+
 }
+
