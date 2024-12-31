@@ -3,3 +3,7 @@ h1{
     font-size: 35px;
     font-family:'Times New Roman', Times, serif;
 }
+.text-center{
+    background-color: 'red' !important;
+    text-align: center;
+}
