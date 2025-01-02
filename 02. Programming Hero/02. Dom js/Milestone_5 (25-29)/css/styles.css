@@ -7,3 +7,13 @@ h1{
     background-color: 'red' !important;
     text-align: center;
 }
+#sec_container{
+    border: 2px solid red;
+    padding: 5px;
+}
+#ul_Container{
+    border: 2px solid rgb(230, 10, 255);
+}
+#two{
+    border: 2px solid rgb(11, 68, 255);
+}

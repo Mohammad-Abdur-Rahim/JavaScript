@@ -1,19 +1,24 @@
-document.getElementById('btn').addEventListener('click',function(){
-const btnclick = document.getElementById('secure_info');
-btnclick.style.display = 'none';
-}
-);
-document.getElementById('text').addEventListener('keyup',function(event){
-
-const newText = event.target.value;
-console.log(newText);
-const final =document.getElementById('btn')
-if(newText === 'delete'){
-    final.removeAttribute('disabled');
-  
-}
-else{
-    final.setAttribute('disabled',true);
-}
-
+// document.getElementById('ul_Container').addEventListener('click', function(){
+//     console.log('Ul clicked')
+// });
+// document.getElementById('sec_container').addEventListener('click', function(){
+//     console.log('Section clicked')
+// });
+// document.getElementById('two').addEventListener('click', function(){
+//     console.log('list clicked')
+// });
+document.getElementById('ul_Container').addEventListener('click', function(){
+    console.log('Ul clicked')
 });
+document.getElementById('sec_container').addEventListener('click', function(){
+    console.log('Section clicked')
+});
+
+document.getElementById('two').addEventListener('click', function(event){
+   event.stopPropagation();
+   console.log('list clicked 1')
+});
+document.getElementById('two').addEventListener('click', function(event){
+  
+    console.log('list clicked 2')
+ });
