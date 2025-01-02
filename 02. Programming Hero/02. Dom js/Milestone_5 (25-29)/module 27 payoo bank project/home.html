@@ -30,10 +30,10 @@
                     <!-- user action button  -->
                     <div class="grid grid-cols-3 justify-evenly gap-3 container">
                         <div class="flex items-center justify-center w-32 h-10">
-                            <button class="btn w-full text-yellow-50">Add Money</button>
+                            <button id="buttonShowAddMoney" class="btn w-full text-yellow-50">Add Money</button>
                         </div>
                         <div class="flex items-center justify-center w-32 h-10">
-                            <button class="btn w-full text-yellow-50">CashOut</button>
+                            <button id="buttonShowCashout" class="btn w-full text-yellow-50">CashOut</button>
                         </div>
                         <div class="flex items-center justify-center w-32 h-10">
                             <button class="btn w-full text-yellow-50">Transfer Money</button>
@@ -50,7 +50,8 @@
                     </div>
                     <div class="divider divide-black"></div>
                     <!-- Add Money Section start -->
-                    <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div id="addMoneyConatiner" class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <h1 class="pl-5 pt-4 text-xl text-red-500 font-bold">AddMoney Form :</h1>
                         <form class="card-body">
                             <div class="form-control ">
                                 <label class="label ">
@@ -76,7 +77,8 @@
                     </div>
                     <!-- Add Money Section end -->
                     <!-- Cash out section  start -->
-                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div id="cashOutConatiner" class=" hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <h1 class="pl-5 pt-4 text-xl text-red-500 font-bold">CashOut Form :</h1>
                         <form class="card-body">
                             <div class="form-control ">
                                 <label class="label ">
@@ -109,6 +111,7 @@
     </main>
     <script src="home.js"></script>
     <script src="cashout.js"></script>
+    <script src="feature.js"></script>
 </body>
 
 </html>
