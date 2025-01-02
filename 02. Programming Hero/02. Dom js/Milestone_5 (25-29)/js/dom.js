@@ -10,6 +10,10 @@ console.log(newText);
 const final =document.getElementById('btn')
 if(newText === 'delete'){
     final.removeAttribute('disabled');
+  
+}
+else{
+    final.setAttribute('disabled',true);
 }
 
 });
