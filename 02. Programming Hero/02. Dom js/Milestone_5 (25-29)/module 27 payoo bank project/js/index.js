@@ -1,20 +1,18 @@
 // step:1 set event handler
 document.getElementById('login_btn').addEventListener('click', function (event) {
     // step:2 prevent default (reloading Browser)
-    event.preventDefault(); 
+    event.preventDefault();
     console.log('Login Clicked with input data');
     // step:3 get the user phone Number
-    const PhoneNumber =document.getElementById('input_number').value;
-    const PinNumber =document.getElementById('input_pin').value;
+    const PhoneNumber = document.getElementById('input_number').value;
+    const PinNumber = document.getElementById('input_pin').value;
     // console.log(PhoneNumber,PinNumber)
-    
-    //step:4  validation User Data
-    //Temporary usecase login page not use in -- future this way ()------
-    if(PhoneNumber==='01995516880' && PinNumber==='36990'){
-        console.log('You Are Login Successfully------');
+    //step:4  validation User Data --Temporary usecase login--
+    if (PhoneNumber === '01995516880' && PinNumber === '36990') {
+        console.log(' ------Login Successfully------');
     }
-    else{
-        alert('Wrong User Data. Try Again ---');
+    else {
+        alert('---- Wrong User Data. Try Again ---');
     }
-    
+
 });
