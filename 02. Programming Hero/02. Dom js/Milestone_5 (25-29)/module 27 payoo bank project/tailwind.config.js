@@ -2,7 +2,11 @@
 module.exports = {
     content: ["./src/**/*.{html,js}"],
     theme: {
-      extend: {},
+      extend: {
+        colors: {
+            customPlaceholder: '#FF5733', // Add your custom color
+          },
+      },
     },
     plugins: [],
   }

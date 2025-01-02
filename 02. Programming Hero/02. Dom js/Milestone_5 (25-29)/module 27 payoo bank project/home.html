@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo Home | Pages</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- daisyUi  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h1 class="text-yellow-200 p-5 text-5xl">welcome to home page</h1>
+    <main class="flex justify-center mt-10">
+        <div class="mockup-phone ">
+            <div class="camera"></div>
+            <div class="display ">
+                <div class="artboard artboard-demo phone-3 bg-white">
+                    <!-- home page code  -->
+                    <div class="stats shadow bg-white ">
+                        <div class="stat">
+                            <div id="oldBalance" class="stat-value text-yellow-500">4500</div>
+                            <div class="stat-desc text-stone-950">Available Balance</div>
+                        </div>
+                    </div>
+                    <div class="divider divide-black"></div>
+
+                    <!-- user action button  -->
+                    <div class="grid grid-cols-3 justify-evenly gap-3 container">
+                        <div class="flex items-center justify-center w-32 h-10">
+                            <button class="btn w-full text-yellow-50">Add Money</button>
+                        </div>
+                        <div class="flex items-center justify-center w-32 h-10">
+                            <button class="btn w-full text-yellow-50">CashOut</button>
+                        </div>
+                        <div class="flex items-center justify-center w-32 h-10">
+                            <button class="btn w-full text-yellow-50">Transfer Money</button>
+                        </div>
+                        <div class="flex items-center justify-center w-32 h-10">
+                            <button class="btn w-full text-yellow-50">Get Bonus</button>
+                        </div>
+                        <div class="flex items-center justify-center w-32 h-10">
+                            <button class="btn w-full text-yellow-50">Pay Bill</button>
+                        </div>
+                        <div class="flex items-center justify-center w-32 h-10">
+                            <button class="btn w-full text-yellow-50">Transaction</button>
+                        </div>
+                    </div>
+                    <div class="divider divide-black"></div>
+                    <!-- Add Money Section start -->
+                    <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                            <div class="form-control ">
+                                <label class="label ">
+                                    <span class="label-text text-white text-xl">Amount</span>
+                                </label>
+                                <input id="amountNumber" class="bg-white p-3 rounded-lg " type="text"
+                                    placeholder="Amount" class="input input-bordered" required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text text-white text-xl">Pin</span>
+                                </label>
+                                <input id="pinNumber" class="bg-white p-3 rounded-lg" type="password" placeholder="Pin"
+                                    class="input input-bordered" required />
+                                <label class="label">
+                                    <a href="#" class="label-text-alt link link-hover">Forgot Pin ?</a>
+                                </label>
+                            </div>
+                            <div class="form-control mt-6">
+                                <button id="addMoneyBtn" class="btn btn-success text-white">Add Money</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Add Money Section end -->
+                    <!-- Cash out section  start -->
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                            <div class="form-control ">
+                                <label class="label ">
+                                    <span class="label-text text-white text-xl">Amount</span>
+                                </label>
+                                <input id="amountNumberCashOut" class="bg-white p-3 rounded-lg " type="text"
+                                    placeholder="Amount" class="input input-bordered" required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text text-white text-xl">Pin</span>
+                                </label>
+                                <input id="pinNumberCashOut" class="bg-white p-3 rounded-lg" type="password"
+                                    placeholder="Pin" class="input input-bordered" required />
+                                <label class="label">
+                                    <a href="#" class="label-text-alt link link-hover">Forgot Pin ?</a>
+                                </label>
+                            </div>
+                            <div class="form-control mt-6">
+                                <button id="cashMoneyBtn" class="btn btn-success text-white">CashOut</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Cash out section  end -->
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="home.js"></script>
+    <script src="cashout.js"></script>
+</body>
+
+</html>
