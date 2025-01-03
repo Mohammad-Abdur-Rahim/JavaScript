@@ -14,6 +14,7 @@ function addMoneyTogle(id){
     //hide all section
     document.getElementById('addMoneyConatiner').classList.add('hidden');
     document.getElementById('cashOutConatiner').classList.add('hidden');
+    document.getElementById('transactionContainer').classList.add('hidden');
     //show the section
     document.getElementById(id).classList.remove('hidden');
 

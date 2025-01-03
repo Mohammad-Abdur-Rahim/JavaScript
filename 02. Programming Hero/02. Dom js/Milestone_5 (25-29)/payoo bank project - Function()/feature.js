@@ -7,3 +7,6 @@ addMoneyTogle('addMoneyConatiner');
 document.getElementById('buttonShowCashout').addEventListener('click', function(){
     addMoneyTogle('cashOutConatiner');
     });
+    document.getElementById('transactionBtn').addEventListener('click', function(){
+        addMoneyTogle('transactionContainer');
+        });

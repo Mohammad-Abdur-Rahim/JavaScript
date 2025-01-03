@@ -8,6 +8,12 @@ document.getElementById('addMoneyBtn').addEventListener('click',function (e){
       const oldBalance =  getElementValueById('oldBalance');
      const finalValance =oldBalance + addMoney;
      document.getElementById('oldBalance').innerText=finalValance;
+        //transaction history 
+        const p = document.createElement('p');
+        p.innerText = `Added : ${addMoney} Tk . Balance is : ${finalValance}`;
+        console.log(p)
+        document.getElementById('transactionContainer').appendChild(p);
+
 
     }
     else{
