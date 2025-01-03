@@ -8,3 +8,14 @@ function getElementValueById (id){
     const finalValue = parseFloat(inputElement);
     return finalValue;
 }
+
+//Toggle button addMoney-----
+function addMoneyTogle(id){
+    //hide all section
+    document.getElementById('addMoneyConatiner').classList.add('hidden');
+    document.getElementById('cashOutConatiner').classList.add('hidden');
+    //show the section
+    document.getElementById(id).classList.remove('hidden');
+
+ 
+}
