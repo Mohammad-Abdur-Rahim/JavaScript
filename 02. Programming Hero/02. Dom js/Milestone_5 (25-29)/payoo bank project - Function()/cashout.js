@@ -11,6 +11,7 @@ document.getElementById('cashMoneyBtn').addEventListener('click', function(e){
    //step: 3
    if(pinNumber === 2222){
     const oldBalance =  getElementValueById('oldBalance');
+    
     const finalBalance = oldBalance - cashOutMoney;
     document.getElementById('oldBalance').innerText=finalBalance;
     //add to transaction History with function
