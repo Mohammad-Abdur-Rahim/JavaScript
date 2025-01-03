@@ -3,8 +3,13 @@ document.getElementById('addMoneyBtn').addEventListener('click',function (e){
     // step : 2
     const addMoney = getInputValueById('amountNumber');
     const pinNumber = getInputValueById('pinNumber');
+    // Validation
+    if(isNaN(addMoney)){
+        alert('Please enter valid amount');
+        return;
+    }
        // step : 3
-    if(pinNumber == 36990){
+    if(pinNumber === 1111){
       const oldBalance =  getElementValueById('oldBalance');
      const finalValance =oldBalance + addMoney;
      document.getElementById('oldBalance').innerText=finalValance;
@@ -17,7 +22,7 @@ document.getElementById('addMoneyBtn').addEventListener('click',function (e){
 
     }
     else{
-        alert('Wrong Passwords')
+        alert('Wrong Passwords : Add Money')
     }
     
 
