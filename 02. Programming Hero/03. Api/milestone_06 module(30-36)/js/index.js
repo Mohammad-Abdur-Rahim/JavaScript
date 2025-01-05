@@ -1,19 +1,19 @@
 const student ={
-    name : 'Md  Abdur Rahim',
+    name : 'Md Abdur Rahim',
     age : 23,
     roll : 5915,
     result :'B+',
     isWebDeveloper : true
 };
-//object Destructuring 
-const {roll,age}=student;
-// const {age:boyose}=student;  different name use kore Destructuring
-
-// console.log(student.roll);
-console.log(roll);
+// keys and values
+console.log(Object.keys(student));
+console.log(Object.values(student));
 
 
 
-//ARRAY Destructuring -----------------------
-const number =[33,44];
-const [a,b]=number;
+console.log(Object.entries(student));  // array of array value return korbe
+// delete object keys
+delete student.result;
+console.log(student);
+//freeze object function when use no value will change 
+Object.freeze(student);
