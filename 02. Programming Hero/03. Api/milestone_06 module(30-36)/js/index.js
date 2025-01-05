@@ -1,14 +1,16 @@
-function add(n1=0,n2=0){
-    const result =n1+n2;
-    return result;
-
+// Function expression
+function add(a,b){
+    return a+b;
 };
-// ARRAY DEFAULT VALUE = [] 
-function fullname(fname='' , lname=''){
-    const result = fname+lname;
-    return result;
+// Function Declaration == **variable declare kore use korse**
+const add2 = function(a,b){
+    return a+b;
 }
-const output1 =add(5);
-const output3 =fullname('Md Abdur Rahim');
-console.log(output1);
-console.log(output3);
+// Arrow Function
+const add3 = (a,b)=> a+b;
+
+
+
+
+const output =add3(5,90);
+console.log(output);
