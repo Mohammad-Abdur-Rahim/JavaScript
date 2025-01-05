@@ -1,16 +1,5 @@
-// Function expression
-function add(a,b){
-    return a+b;
-};
-// Function Declaration == **variable declare kore use korse**
-const add2 = function(a,b){
-    return a+b;
-}
-// Arrow Function
-const add3 = (a,b)=> a+b;
+// Arrow Function 3 way declare parameter
+const first = ()=> console.log('first');
+const second = (a,b)=> a+b;
+const third = (a,b,c)=> a*b*c;
 
-
-
-
-const output =add3(5,90);
-console.log(output);
