@@ -8,9 +8,6 @@ const product =[
 ];
 
 
-const names = product.map((product)=>product.name);
-const price = product.map((product)=>product.price);
-console.log(names);
-console.log(price);
+product.filter((product)=>console.log(product.id));
 
 
