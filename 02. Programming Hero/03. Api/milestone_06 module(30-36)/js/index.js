@@ -8,7 +8,7 @@ const product =[
 ];
 
 
-const price =product.filter((product)=>product.price >= 60000);
+const price =product.find((product)=>product.price >= 60000);
 console.log(price);
 
 
