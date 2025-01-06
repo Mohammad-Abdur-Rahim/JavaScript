@@ -1,15 +1,20 @@
 // class declaration in js 
 
-class Teacher{
-    constructor(name,subject){
-        this.name =name;
-        this.subject=subject;
+class Vehicle {
+    constructor(name,price){
+        this.name = name;
+        this.price = price;
     }
-    lecture(){
-        console.log('teaching is math');
+    move(){
+        console.log("Move To Finland Inshallah");
     }
 }
-const Aliza =new Teacher('Aliza','Operating System');
-console.log(Aliza);
+class Bus extends Vehicle {
+    constructor(name,price,seat,ticket){
+        super(name,price);
+        this.seat = seat;
+        this.ticket = ticket;
+    }
+}
 
 
