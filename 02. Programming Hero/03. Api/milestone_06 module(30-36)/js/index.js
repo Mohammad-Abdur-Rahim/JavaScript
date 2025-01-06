@@ -8,6 +8,9 @@ const product =[
 ];
 
 
-product.filter((product)=>console.log(product.id));
+const price =product.filter((product)=>product.price >= 60000);
+console.log(price);
+
+
 
 
