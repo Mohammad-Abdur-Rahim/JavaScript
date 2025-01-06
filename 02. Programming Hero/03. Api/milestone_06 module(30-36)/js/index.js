@@ -1,4 +1,6 @@
-// ForEach ==> Methods  ----------
+// filter ==> Methods  ----------
 const number =[10,20,3,44,55];
-const result = number.forEach(n=>console.log(n));
-console.log(result);
+
+
+const selected = number.filter( n=> n%2===0 );
+console.log(selected);
