@@ -26,3 +26,5 @@ function displayUserPost(data){
  postContainer.appendChild(div);
  }
 }
+
+// Advance note for future js code module 34
