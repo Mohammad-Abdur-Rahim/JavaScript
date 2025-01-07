@@ -1,8 +1,14 @@
 
-function post(){
-    fetch('https://jsonplaceholder.typicode.com/posts')
-    .then(res => res.json())
-    .then(data => displayUserPost(data))
+// function post(){
+//     fetch('https://jsonplaceholder.typicode.com/posts')
+//     .then(res => res.json())
+//     .then(data => displayUserPost(data))
+// }
+
+const post =async()=>{
+    const res =await fetch('https://jsonplaceholder.typicode.com/posts');
+    const data = await res.json();
+    data =displayUserPost(data);
 }
 
 function displayUserPost(data){
