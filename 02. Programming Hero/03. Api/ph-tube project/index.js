@@ -71,6 +71,10 @@ ${video.authors[0].verified=== true ?  `<img class="w-5" src ="https://img.icons
 };
 
 
-// ${video.authors[0].verified=== true ?   :  }
-// 
-// `<img class="w-5" src ="https://img.icons8.com/?size=48&id=D9RtvkuOe31p&format=png"/>`
+function getTime(time){
+  const hour = parseInt(time /3600);
+  const remainSeconds = time % 3600;
+  const minutes = parseInt(remainSeconds / 60);
+  return `${hour} hour ${minutes} minute`
+}
+console.log(getTime(7865));
