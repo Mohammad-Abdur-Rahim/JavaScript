@@ -6,9 +6,16 @@ const loadCategories = () =>{
     .catch(error => console.log(error))
 }
 // Display function load data 2nd
-const displayCategories = (data) =>{
-    console.log(data);
-}
+const displayCategories = (categories) =>{
+    const categoriesContainer  = document.getElementById('categories')
+    categories.forEach((item)=>{
+        console.log(item);
+        const button = document.createElement('button');
+        button.classList ='btn btn-primary';
+        button.innerText= item.category; 
+        categoriesContainer.append(button);
+    });
+};
 
 
 
