@@ -43,7 +43,7 @@ const displayVideo = (videos) => {
       alt="Shoes"
       class="h-full w-full object-cover"
       />
-      ${video.others.posted_date.length==0 ? "":`  <span class="absolute right-2 bottom-2 bg-black  rounded p-1 text-white" >${video.others.posted_date}</span>`
+      ${video.others.posted_date.length==0 ? "":`  <span class="absolute right-2 bottom-2 bg-black  rounded p-1 text-white" >${getTime(video.others.posted_date)}</span>`
 
       }
     
@@ -70,7 +70,7 @@ ${video.authors[0].verified=== true ?  `<img class="w-5" src ="https://img.icons
 
 };
 
-
+// time function logic 
 function getTime(time){
   const hour = parseInt(time /3600);
   const remainSeconds = time % 3600;
