@@ -34,16 +34,19 @@ const displayVideo = (videos) => {
   const videosContainer = document.getElementById('videos');
   videos.forEach(video => {
     const card = document.createElement('div');
-    card.classList =
+    card.classList ="card card-compact"
       card.innerHTML =
       `
-<div class="card card-compact bg-base-100 w-96 shadow-xl">
-  <figure class="h-[200px]">
+  <figure class="h-[200px] relative ">
     <img
       src=${video.thumbnail}
       alt="Shoes"
       class="h-full w-full object-cover"
       />
+      ${video.others.posted_date.length==0 ? "":`  <span class="absolute right-2 bottom-2 bg-black  rounded p-1 text-white" >${video.others.posted_date}</span>`
+
+      }
+    
   </figure>
   <div class="px-2 py-2 flex gap-2">
   <div>
@@ -60,7 +63,7 @@ ${video.authors[0].verified=== true ?  `<img class="w-5" src ="https://img.icons
   </div>
 
   </div>
-</div>`;
+`;
     videosContainer.append(card);
   });
 
