@@ -21,11 +21,11 @@ const displayCategories = (categories) => {
   });
 };
 const loadVideoCategory = (id) => {
-  alert(id);
+  // alert(id);
   //fetch data 
   fetch(`https://openapi.programming-hero.com/api/phero-tube/category/${id}`)
   .then((res) => res.json())
-  .then((data) => console.log(data))
+  .then((data) => displayVideo(data.category))
   .catch((error) => console.log(error));
 };
 
@@ -44,6 +44,7 @@ loadVideo();
 
 const displayVideo = (videos) => {
   const videosContainer = document.getElementById('videos');
+  videosContainer.innerHTML = "";
   videos.forEach(video => {
     const card = document.createElement('div');
     card.classList ="card card-compact"
