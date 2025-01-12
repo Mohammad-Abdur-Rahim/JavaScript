@@ -10,12 +10,20 @@ const displayCategories = (categories) => {
   const categoriesContainer = document.getElementById('categories')
   categories.forEach((item) => {
     console.log(item);
-    const button = document.createElement('button');
-    button.classList = 'btn btn-primary';
-    button.innerText = item.category;
-    categoriesContainer.append(button);
+    const buttonContainer = document.createElement("div");
+    buttonContainer.classList = 'btn btn-primary';
+
+    buttonContainer.innerHTML = `<button onclick="loadVideoCategory(${item.category_id})">
+    
+    ${item.category}</button>`;
+
+    categoriesContainer.append(buttonContainer);
   });
 };
+const loadVideoCategory = (id) => {
+  alert(id);
+}
+;
 
 loadCategories();
 
