@@ -64,8 +64,8 @@ document.getElementById('customModal').showModal();
 
 // video data Loaded fetch here 
 
-const loadVideo = () => {
-  fetch("https://openapi.programming-hero.com/api/phero-tube/videos")
+const loadVideo = (searchText="") => {
+  fetch(`https://openapi.programming-hero.com/api/phero-tube/videos?title=${searchText}`)
     .then(res => res.json())
     .then(data => displayVideo(data.videos))
     .catch(error => console.log(error))
@@ -73,7 +73,7 @@ const loadVideo = () => {
 loadVideo();
 //search button implements
 document.getElementById('searchInput').addEventListener('keyup',(e)=>{
-  console.log(e.target.value);
+  loadVideo(e.target.value);
 })
 
 const displayVideo = (videos) => {
