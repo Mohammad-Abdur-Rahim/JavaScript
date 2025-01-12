@@ -27,7 +27,6 @@ const removeActive =()=>{
     }
 }
 const loadVideoCategory = (id) => {
-  // alert(id);
   //fetch data 
   fetch(`https://openapi.programming-hero.com/api/phero-tube/category/${id}`)
   .then((res) => res.json())
@@ -40,8 +39,27 @@ const loadVideoCategory = (id) => {
   })
   .catch((error) => console.log(error));
 };
+// Modal details
+const loadDetails = (videoId) => {
+  console.log(videoId);
+  // fetch data
+  fetch(`https://openapi.programming-hero.com/api/phero-tube/video/${videoId}`)
+    .then(res => res.json())
+    .then(data => displayDetails(data.video))
+    .catch(error => console.log(error))
+};
+const displayDetails = (video) => {
+console.log(video);
+const modalContent = document.getElementById('modalContent');
+modalContent.innerHTML = `
+<img src=${video.thumbnail}/>
+<p>${video.description}</p>
+`;
+//way2 ----
+document.getElementById('customModal').showModal();
+};
 
-loadCategories();
+
 
 
 // video data Loaded fetch here 
@@ -98,7 +116,7 @@ ${video.authors[0].verified=== true ?  `<img class="w-5" src ="https://img.icons
 <p>${video.others.views}</p>
 </div>
   </div>
-
+<button onclick="loadDetails('${video.video_id}')" class="btn btn-sm btn-error ml-5 text-white">Details</button>
   </div>
 `;
     videosContainer.append(card);
