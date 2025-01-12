@@ -71,6 +71,10 @@ const loadVideo = () => {
     .catch(error => console.log(error))
 }
 loadVideo();
+//search button implements
+document.getElementById('searchInput').addEventListener('keyup',(e)=>{
+  console.log(e.target.value);
+})
 
 const displayVideo = (videos) => {
   const videosContainer = document.getElementById('videos');
