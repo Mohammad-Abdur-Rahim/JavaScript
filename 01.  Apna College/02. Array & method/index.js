@@ -1,9 +1,11 @@
-let marks = [1,33,334,55,67,8,9];
-for(let i=0; i<marks.length;i++){
-console.log( marks[i]);
+// Array sum and average question solve
+let  marks =[85,97,44,37,76,60];
+let sum =0;
+const item = marks.length;
+for(let mark of marks){
+    sum+=mark;
+    
 }
-let names = ["rahim","Rony","Rakib","asif"];
-
-for(let name of names){
-    console.log( name);
-}
+const avg = sum / item
+console.log("Total Sum : ",sum);
+console.log(`Average marks of the class : ${avg}`);
