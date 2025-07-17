@@ -1,11 +1,9 @@
-let foods =["Potato","Apple","Tomato","MAngo","chips"];
-console.log("Original :",foods);
-foods.push("Adil");
-console.log(`After Push ; ${foods}`);
-foods.pop();
-console.log(`After pop ; ${foods}`);
-
-foods.unshift("Adil");
-console.log(`After unshift ; ${foods}`);
-foods.shift();
-console.log(`After shift ; ${foods}`);
+// Q-03 company store 
+let companies =["Bloomberg", "Microsoft","Uber","Google","IBM","Netflix"];
+console.log(companies);
+companies.shift();
+console.log(`1. Remove the first company : ${companies}`)
+companies.splice(1,1,"ola");
+console.log(`2. Remove Uber Add ola : ${companies}`)
+companies.push("Amazon");
+console.log(`3. Add Amazon : ${companies}`);
