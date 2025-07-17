@@ -1,9 +1,8 @@
 let items = [250,645,300,900,50];
-let idx = 0;
-for (let data of items){
-    console.log(`index of ${idx} = ${data}`)
-    let offer = data /10;
-    items[idx] =items[idx] - offer;
-    console.log(`After offer = ${items[idx]}`)
-    idx++
+
+for (let i=0; i<items.length;i++){
+    console.log(items[i]);
+    let offer = items[i]/10;
+    items[i]-=offer;
 }
+console.log(items)
