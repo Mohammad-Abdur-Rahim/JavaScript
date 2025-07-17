@@ -1,36 +1,5 @@
-// function countVowel(name) {
-//   let count = 0;
-//   for (let data of name) {
-//     if (
-//       data === "a" ||
-//       data === "e" ||
-//       data === "i" ||
-//       data === "o" ||
-//       data === "u"
-//     ) {
-//       count++;
-//     }
-//   }
-//   return count;
-// }
-
-// const output = countVowel("rahim");
-// console.log(`Vowel Number Is : ${output}`);
-
-const countVowel=(str)=>{
-   let count = 0;
-  for (let data of str) {
-    if (
-      data === "a" ||
-      data === "e" ||
-      data === "i" ||
-      data === "o" ||
-      data === "u"
-    ) {
-      count++;
-    }
-  }
-  return count;
-}
-const output = countVowel("rahim");
-console.log(`Vowel Number Is : ${output}`);
+let arr = [1, 2, 3, 4, 5];
+arr.forEach((data, idx, arr) => {
+  // include 3 value forEach 
+  console.log(data, idx, arr);
+});
