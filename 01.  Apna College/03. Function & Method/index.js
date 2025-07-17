@@ -1,6 +1,5 @@
-function sum(n1,n2){
-    let add = n1+n2 ;
-    return add;
+// Arrow Function 
+const arrowSum =(a,b)=>{
+console.log(a+b);
 }
-let output = sum(160,272);
-console.log(output)
+arrowSum(10,20);
