@@ -1,11 +1,9 @@
-// Array sum and average question solve
-let  marks =[85,97,44,37,76,60];
-let sum =0;
-const item = marks.length;
-for(let mark of marks){
-    sum+=mark;
-    
+let items = [250,645,300,900,50];
+let idx = 0;
+for (let data of items){
+    console.log(`index of ${idx} = ${data}`)
+    let offer = data /10;
+    items[idx] =items[idx] - offer;
+    console.log(`After offer = ${items[idx]}`)
+    idx++
 }
-const avg = sum / item
-console.log("Total Sum : ",sum);
-console.log(`Average marks of the class : ${avg}`);
