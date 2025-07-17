@@ -1,11 +1,9 @@
-// Calculate sum of 1 to 15
-let i = 1;
-let sum = 0;
-do{
-  sum += i;
-  console.log(sum);
-  i++;
+// practice qs2
+let gameNum = 15;
+let userNum = parseInt(prompt("Enter Your Number:"));
+
+while (userNum !== gameNum) {
+    userNum = parseInt(prompt("Wrong Number. Enter Your Number:"));
 }
-while (i <= 5) ;
 
-
+console.log("Congratulations! You Win 🎉");
