@@ -1,8 +1,6 @@
-// find only one value  Return -------------------------
-
-let arr = [1, 2, 3, 4, 5,6,77,43,90];
-
-let evenArray = arr.find((data)=>{
-    return data%2===0;
-});
-console.log(evenArray);
+let n = prompt("Enter your number:"); 
+let arr =[];
+for(let i=1;i<n;i++){
+    arr[i]=i;
+}
+console.log(arr);
