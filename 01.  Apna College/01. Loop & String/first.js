@@ -1,7 +1,8 @@
 // Calculate sum of 1 to 15
+let i = 1;
 let sum = 0;
-for(let i=1; i<=5;i++){
-    sum+=i;
-   
+while (i <= 5) {
+  sum += i;
+  console.log(sum);
+  i++;
 }
-console.log("sum",sum);
