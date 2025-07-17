@@ -1,8 +1,11 @@
-let items = [250,645,300,900,50];
+let foods =["Potato","Apple","Tomato","MAngo","chips"];
+console.log("Original :",foods);
+foods.push("Adil");
+console.log(`After Push ; ${foods}`);
+foods.pop();
+console.log(`After pop ; ${foods}`);
 
-for (let i=0; i<items.length;i++){
-    console.log(items[i]);
-    let offer = items[i]/10;
-    items[i]-=offer;
-}
-console.log(items)
+foods.unshift("Adil");
+console.log(`After unshift ; ${foods}`);
+foods.shift();
+console.log(`After shift ; ${foods}`);
