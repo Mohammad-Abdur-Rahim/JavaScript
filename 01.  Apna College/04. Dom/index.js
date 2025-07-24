@@ -1,4 +1,5 @@
-// get attribute value 
-let para = document.querySelector("p");
-// console.log(para.getAttribute("class"))
-console.log(para.setAttribute("class","new"))
+let test = document.querySelector("div");
+console.log(test);
+test.style.backgroundColor ="green";
+test.style.fontSize ="25px";
+test.innerText =" Hello!"
