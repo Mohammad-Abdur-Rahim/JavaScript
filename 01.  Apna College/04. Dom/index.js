@@ -1,5 +1,7 @@
+let newBtn = document.createElement("button");
+newBtn.innerText = " Click Me";
+console.log(newBtn);
+
 let test = document.querySelector("div");
-console.log(test);
-test.style.backgroundColor ="green";
-test.style.fontSize ="25px";
-test.innerText =" Hello!"
+test.append(newBtn);
+// test.prepend(newBtn);
