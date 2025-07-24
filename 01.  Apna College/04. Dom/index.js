@@ -1,6 +1,8 @@
-// Qustion 1: create h2 heading with text Hellow JavaScript .append From Apna College Students
-let params = document.getElementById("heading");
-console.log(params);
-params.append(" from Apna College Students");
+// Qustion 2: Create 3 div same class name "box" Access all and add unique text---
 
+let divs = document.querySelectorAll(".box");
+// console.log(params);
+divs[0].innerText = "Unique Value Box 1";
+divs[1].innerText = "Unique Value Box 2";
+divs[2].innerText = "Unique Value Box 3";
 
