@@ -6,17 +6,18 @@
     <title>Events in JS</title>
   </head>
   <style>
-    .box {
-      height: 500px;
-      width: 500px;
-      background-color: cadetblue;
+    .dark{
+        background-color: black;
+        color: white;
+    }
+    .light{
+        background-color: white;
+        color: black;
     }
   </style>
   <body>
-    <div class="box" onmouseover="console.log('you are in div')">
-      <h1>Events in JS</h1>
-
-      <button>Click me!</button>
+    <div>
+      <button id="mode">Change Mode</button>
       <script src="index.js"></script>
     </div>
   </body>
