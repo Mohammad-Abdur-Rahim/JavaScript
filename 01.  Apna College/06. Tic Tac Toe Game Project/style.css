@@ -45,3 +45,9 @@ h1{
     color: #ebe9e8;
      font-weight: bold;
 }
+#msg{
+  font-size: 25px;
+  background-color: #ff625d;
+  padding: 20px;
+  color: rgb(34, 11, 241);
+}
