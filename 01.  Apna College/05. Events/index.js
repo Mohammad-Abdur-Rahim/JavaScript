@@ -1,16 +1,11 @@
 let modeBtn = document.querySelector("#mode");
 let body = document.querySelector("body");
 
-let currMode = "light";
+let currMode = true;
+
 modeBtn.addEventListener("click", () => {
-  if (currMode === "light") {
-    currMode = "dark";
-    body.classList.add("dark");
-    body.classList.remove("light");
-  } else {
-    currMode = "light";
-    body.classList.add("light");
-    body.classList.remove("dark");
-  }
-  console.log(currMode);
+  currMode = !currMode;
+  body.classList.toggle("light", currMode);
+  body.classList.toggle("dark", !currMode);
+  console.log(currMode ? "light" : "dark");
 });
