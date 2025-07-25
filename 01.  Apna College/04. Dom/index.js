@@ -1,7 +1,13 @@
-let newBtn = document.createElement("button");
-newBtn.innerText = " Click Me";
-console.log(newBtn);
+// Q1: create new button . give it text click menubar, bg of red text color wgite
 
-let test = document.querySelector("div");
-test.append(newBtn);
-// test.prepend(newBtn);
+
+let el = document.createElement("button");
+el.innerText = "Click Me!";
+el.style.backgroundColor ="red";
+el.style.color ="White";
+
+document.querySelector("body").prepend(el);
+
+
+// let test = document.querySelector("div");
+// test.append(el)
