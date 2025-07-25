@@ -33,13 +33,13 @@ body {
   color: #b0413e;
   background-color: antiquewhite;
 }
-#reset{
+#reset a{
     padding: 15px;
-    border-radius: 10px;
-    border: none;
+
     background-color: #b0413e;
     color: white;
     font-weight: bold;
+    text-decoration: none;
 }
 h1{
     color: #ebe9e8;
