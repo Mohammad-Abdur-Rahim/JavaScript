@@ -1,10 +1,18 @@
-// call back Fn passed arg to another function
+// call backHell
 
-function sum(a,b){
-    console.log(a+b);
+function getData(dataId,getNext){
+    setTimeout(()=>{
+        console.log("data",dataId);
+        if(getNext){
+            getNext();
+        }
+    },2000)
 }
-
-function calculator(a,b,sumcallBack){
-    sumcallBack(a,b);
-}
-calculator(10,20,sum);
+//CallBack Hell
+getData(1,()=>{
+    getData(2,()=>{
+        getData(3,()=>{
+            getData(4)
+        })
+    });
+})
