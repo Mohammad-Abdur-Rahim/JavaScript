@@ -1,24 +1,21 @@
-class toyotaCar {
-    constructor(brand,mileage){
-        console.log("Create constructor method");
-        this.brand= brand;
-        this.mileage= mileage;
+class Person{
+    eat(){
+        console.log("Eating");
     }
-  start() {
-    console.log("start car");
-  }
-
-  end() {
-    console.log("stop car");
-  }
-  setBrand(brand) {
-    this.brand = brand;
-  }
+    sleep(){
+        console.log("Sleep");
+    }
 }
 
-let car1 = new toyotaCar("Car 1",70);
-let car2 = new toyotaCar("car 2",100);
-
-console.log(car1);
-console.log(car2);
-
+class Engineer extends Person{
+    Work(){
+        console.log("React Developer ");
+    }
+}
+class Doctor extends Person{
+    Work(){
+        console.log("Treate the patient");
+    }
+}
+let rahimobj = new Engineer();
+let shakibobj = new Doctor();
