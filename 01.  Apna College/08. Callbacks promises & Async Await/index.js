@@ -1,7 +1,10 @@
-// ASynchronous programe execute when receive
+// call back Fn passed arg to another function
 
-function hello(){
-    console.log("hello");
+function sum(a,b){
+    console.log(a+b);
 }
-setTimeout(hello,2000);
-console.log("with wait fisrt execute");
+
+function calculator(a,b,sumcallBack){
+    sumcallBack(a,b);
+}
+calculator(10,20,sum);
