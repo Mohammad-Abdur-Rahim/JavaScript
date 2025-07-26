@@ -1,23 +1,14 @@
-// Craete new class called Admin which Inherit User. Add A New Method called editData to Admin that Allow Edit website;
+//Try Catch --Error Handling Method-----------------
 
-let data = "Secret Data";
-class User {
-  constructor(name, email) {
-    this.name = name;
-    this.email = email;
-  }
-  view() {
-    console.log("Website Data ", data);
-  }
+let a = 10;
+let b = 30;
+
+console.log("a =", a);
+console.log("b =", b);
+console.log("a+b =", a + b);
+try {
+  console.log("a+c =", a + c);
+} catch (err) {
+  console.log(err);
 }
-
-class Admin extends User {
-    constructor(name,email){
-        super(name,email);
-    }
-  editData() {
-    data = "Some New Data";
-  }
-}
-
-let admin= new Admin("Admin","admin34@gmail.com");
+console.log("a*b =", a * b);
