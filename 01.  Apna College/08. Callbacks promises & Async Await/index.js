@@ -1,4 +1,7 @@
-// Syrnchonize programe execute serially
-console.log("one");
-console.log("two");
-console.log("three");
+// ASynchronous programe execute when receive
+
+function hello(){
+    console.log("hello");
+}
+setTimeout(hello,2000);
+console.log("with wait fisrt execute");
