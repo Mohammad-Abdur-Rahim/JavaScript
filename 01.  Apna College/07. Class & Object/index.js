@@ -1,4 +1,7 @@
 class Person{
+    constructor(){
+        this.role ="Frontend React Developer"
+    }
     eat(){
         console.log("Eating");
     }
@@ -11,6 +14,10 @@ class Person{
 }
 
 class Engineer extends Person{
+    constructor(branch){
+        super(); //invoke Parent Class Constructor
+        this.branch=branch;
+    }
     work(){
         console.log("React Developer ");
     }
@@ -21,5 +28,5 @@ class Doctor extends Person{
     }
 }
 let personobj = new Person();
-let rahimobj = new Engineer();
+let rahimobj = new Engineer("Daffodil");
 let shakibobj = new Doctor();
