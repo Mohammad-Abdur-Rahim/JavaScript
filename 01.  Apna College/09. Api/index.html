@@ -1,56 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Currency Converter App</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-<div class="conatiner">
-    <h2>
-        Currency Converter
-    </h2>
-    <form action="">
-<div class="amount">
-    <p>Enter Amount</p>
-    <input type="text" value="1000">
-</div>
-<!-- Form & To Select  -->
-<div class="dropdown">
-    <div class="form">
-        <p>Form</p>
-        <div class="select_Container">
-            <img src="https://flagsapi.com/US/flat/64.png" alt="">
-            <select name="form">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Currency Converter</h2>
+      <form action="">
+        <div class="amount">
+          <p>Enter Amount</p>
+          <input type="text" value="1000" />
+        </div>
+        <!-- Form & To Select  -->
+        <div class="dropdown">
+          <div class="formList">
+            <p>Form</p>
+            <div class="select_Container">
+              <img src="https://flagsapi.com/US/flat/64.png" alt="" />
+              <select name="form">
                 <option value="USD">USD</option>
                 <option value="BDT">BDT</option>
                 <option value="INR">INR</option>
                 <option value="EUR">EUR</option>
-            </select>
-        </div>
-    </div>
-    <i class="fa-solid fa-right-left"></i>
-    <div class="to">
-         <p>To</p>
-        <div class="select_Container">
-            <img src="https://flagsapi.com/BD/flat/64.png" alt="">
-            <select name="form">
-                <option value="USD">USD</option>
+              </select>
+            </div>
+          </div>
+          <i class="fa-solid fa-right-left"></i>
+          <div class="to">
+            <p>To</p>
+            <div class="select_Container">
+              <img src="https://flagsapi.com/BD/flat/64.png" alt="" />
+              <select name="formList">
                 <option value="BDT">BDT</option>
+                <option value="USD">USD</option>
                 <option value="INR">INR</option>
                 <option value="EUR">EUR</option>
-            </select>
+              </select>
+            </div>
+          </div>
         </div>
+
+        <div class="msg">1USD = 120BDT</div>
+        <button>Get Exchange Rate</button>
+      </form>
     </div>
-</div>
-
-
-<div class="msg">1USD = 120BDT</div>
-<button>Exchange Rate</button>
-    </form>
-</div>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
